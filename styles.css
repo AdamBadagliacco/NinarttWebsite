@@ -1,21 +1,196 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: Freestyle Script;
+	src: url(FREESCPT.TTF);
+}
+@font-face {
+  font-family: Forte;
+	src: url(FORTE.TTF);
 }
 
-html, body {
-  margin: 0;
-  border: 0;
+body {
+	text-align: center;
+	background-color: #023e8a; 
+}
+#top{
+	font-family: Freestyle Script;
+	font-size: 50px;
+}
+h1 {
+  margin: 0; 
   padding: 0;
-  background-color: #fff;
+  color: #ade8f4;
+}
+#footer {
+			color: #ade8f4; 
+			width: 700px;
+			padding: 15px 0px 15px 0px;
+			margin: 0px auto 0px auto;
+			text-align: center;}
 }
 
-main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
+p { /*For SOME reason it makes the nav bar a smaller and cuter font*/
+	color: #ade8f4;
 }
 
-main > h1 {
+p.blue {
+  color: #ade8f4;
+}
+
+
+
+
+
+/*Below is to make the navigation bar a bar and not a list*/
+#menu{
+			
+			color: red; 
+			font-family: Forte;
+			font-size: 25px;
+			clear: both;}
+		ul{
+			width: 700px;
+			padding: 15px 0px 15px 0px;
+			margin: 0px auto 0px auto;
+			text-align: center;}
+		li{
+			display: inline;
+			margin: 0px 30px;}
+
+/*Making the links a nice color*/
+a:link {
+  color: #90e0ef;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #90e0ef;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #0096c7;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active { /*This is when it's being pressed*/
+  color: #0077b6;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+			
+/*--------------------------------------------------------------*/
+/*--------------CSS BELOW IS SPECIFIC TO INDEX------------------*/
+/*--------------------------------------------------------------*/
+			
+/*CSS below is for gallery*/
+table, th, td {
+	/* uncommeent this to check the borders: border: 1px solid blue; */
+}
+th, td {
+  padding: 30px;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Below here is for the dropdown from gallery*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #caf0f8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #0096C7;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #023E8A;}
+
+/*CSS Below here is for making the images fade in */ 
+
+.fade-in {
+animation: fadeIn ease 4s;
+-webkit-animation: fadeIn ease 4s;
+-moz-animation: fadeIn ease 4s;
+-o-animation: fadeIn ease 4s;
+-ms-animation: fadeIn ease 4s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+/*CSS Below here is for making the line grow*/ 
+
+@keyframes line_animation {
+from {
+	width: 0%;
+}
+to {
+	width:700px;
+}
+}
+.line {
+animation-name: line_animation;
+animation-duration: 1.5s;
+animation-timing-function: linear; 
+}
+
+
+/*Line that grows*/ /*border-style: dotted; /*For trying to tell what all teh white space is from*/
+hr {
+			width: 700px;
+			margin: 0px auto 0px auto;
+			border-bottom: 2px solid #0077b6;
+			border-top-width: 0px;
+			
+}
+#container{
+  width: 700px; 
   text-align: center;
-  font-size: 3.5em;
+  margin: 0 auto;
 }
+#email{
+	color: #00B4D8
+	
+}
+
+
+
