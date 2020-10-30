@@ -1,4 +1,4 @@
-# Ninarrt Website
+# Ninartt Website
 
 This repo is used to test creating static websites in Azure. 
 
